@@ -18,9 +18,6 @@ class Math{
 			double C;
 			int choice;
 			
-			A = 3.14*r*r;
-			B = 0.5*l*b;
-			C = l*b;
 			
 			do
 			{
@@ -28,35 +25,41 @@ class Math{
 					 << "2 => area of tringle"  << endl
 					 << "3 => area of rectengle"<< endl;
 					 
+					 cout <<"enter your choice: ";
+					 cin >> choice;
+					 
 				switch(choice)
 				{
 					case 1:
+							
 							cout << "enter r:";
 							cin  >> r;
-							cout << "area of circle\t:" << A << endl;
+							cout << "area of circle\t:" << 3.14*r*r << endl << endl << endl;
 							break;
 						
 					case 2:
+						
 							cout << "enter l:";
 							cin  >> l;
 							cout << "enter b:";
 							cin  >> b;
-							cout << "area of tringle\t:" << B << endl;
+							cout << "area of tringle\t:" << 0.5*l*b << endl << endl << endl;
 							break;
 							
 					case 3:
+							
 							cout << "enter l:";
 							cin  >> l;
 							cout << "enter b:";
 							cin  >> b;
-							cout << "area of rectengle\t:" << C << endl;
+							cout << "area of rectengle\t:" <<  l*b << endl << endl << endl;
 							break;
 					
 					case 4:
 						break;
 				}
 				
-			}while(choice == 4);
+			}while(choice != 4);
 		}
 		
 };
@@ -66,7 +69,7 @@ class Math2 : public Math
 	public:
 	void calculate()
 	{
-		cout << "walcome" << endl;
+		cout << "walcome" << endl << endl << endl;
 	}
 };
 
